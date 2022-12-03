@@ -73,7 +73,7 @@ def STP_BPDU_handler(pkt):
             )
 
             # Send the BPDU using the sendp() function
-            sendp(pkt, iface="lo", verbose=False)
+            sendp(pkt, iface=INTERFACE, verbose=False)
 
     return
 
